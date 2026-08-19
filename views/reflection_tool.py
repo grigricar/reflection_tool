@@ -181,14 +181,21 @@ def reflection_tool(data_source):
             
             language_insights['concept_percentage'] = language_insights['input_marks']/language_insights['Question Total']
 
+            language_insights = language_insights[language_insights['concept_percentage'] < 1]
+
             language_insights.sort_values("concept_percentage", ascending=True, inplace=True)
             language_insights.reset_index(drop=True, inplace=True)
             
-
+            
             lowest_concepts = language_insights.iloc[:5, 0].to_list()
+            
             concepts_text = ', '.join(lowest_concepts)
 
-            st.info(f"You may want to revise and brush up on your **language knowledge** with respect to the following concepts: **{concepts_text}**.", icon='💡')
+            if lowest_concepts:
+                st.info(f"You may want to revise and brush up on your **language knowledge** with respect to the following concepts: **{concepts_text}**.", icon='💡')
+
+            else:
+                st.success("Excellent job! You achieved full marks across all language concepts.", icon='🌟')
 
             #Improve on other concepts:
 
@@ -197,6 +204,8 @@ def reflection_tool(data_source):
             
             other_insights['concept_percentage'] = other_insights['input_marks']/other_insights['Question Total']
 
+            other_insights = other_insights[other_insights['concept_percentage'] < 1]
+
             other_insights.sort_values("concept_percentage", ascending=True, inplace=True)
             other_insights.reset_index(drop=True, inplace=True)
             
@@ -204,7 +213,11 @@ def reflection_tool(data_source):
             lowest_concepts2 = other_insights.iloc[:5, 0].to_list()
             concepts_text2 = ', '.join(lowest_concepts2)
 
-            st.info(f"You may want to revise and brush up on **other question types** by revising the following concepts: **{concepts_text2}**.", icon='💡')
+            if lowest_concepts2:
+                st.info(f"You may want to revise and brush up on **other question types** by revising the following concepts: **{concepts_text2}**.", icon='💡')
+
+            else:
+                st.success("Excellent job! You achieved full marks across all other concepts.", icon='🌟')
 
             lang_checklist_html = "".join([f'<li><label><input type="checkbox"> {concept}</label></li>' for concept in lowest_concepts])
             other_checklist_html = "".join([f'<li><label><input type="checkbox"> {concept}</label></li>' for concept in lowest_concepts2])
@@ -213,7 +226,7 @@ def reflection_tool(data_source):
 
             st.markdown("#### Tips for action: \n" \
             " - Access the sidebar to find quick definitions of the question types.\n" \
-            " - Full explanation of the question types, with examples, can be found in the Q-type breakdown tab.\n" \
+            " - Full explanation of the question types, with examples, can be found in the 'Definitions' tab.\n" \
             " - Summary question should be relatively high. This is the most predictable question type.\n" \
             " - Visual Literacy, Language Focused and Concept Questions are easy to improve on with targeted study.\n" \
             " - Comparative questions are predictable in terms of technique and how to structure responses. Work on answering technique.\n" \
@@ -268,7 +281,7 @@ def reflection_tool(data_source):
 
             <h4>Tips for action:</h4>
                         <ul class="tips-list">
-                            <li>Consult the Q-type definitions to see what questions you should focus on to improve.</li>
+                            <li>Consult the 'Definitions' and 'Insights' to see what questions you should focus on to improve.</li>
                             <li>Summary question should be relatively high. This is the most predictable question type!</li>
                             <li>Visual Literacy, Language Focused and Concept Questions are easy to improve on with targeted study (see lists below!).</li>
                             <li>Comparative questions are predictable in terms of technique and how to structure responses. Work on answering technique.</li>

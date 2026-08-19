@@ -10,12 +10,11 @@ def q_type():
     st.page_link(page="https://www.youtube.com/channel/UCCDNh1fC2C93zzyIj15fC0g", label="An @English_hacked reflective tool")
 
     st.title("Question Types")
-    st.text("This entire reflective tool is premised on a redefinition of question type rather than focusing on reflection by " \
-    "section. Improving in Paper I can be challenging. Obviously, preparing yourself for poetry gives you huge advantages " \
-    "in terms of time and insight. The Summary question is also the most static and predictable of question type and so it " \
-    "is one of the easiest question types to prepare for and consistently achieve a specific result. \n" \
-    "\n" \
-    "Yet, across Paper 1 there are many repeatable question types. For example, on average, Language Focused (LF) questions account for 20% of the paper! " \
+    st.text("Improving your Paper I mark can feel like trying to hit a moving target. Where do you even begin? This reflective tool gives you a clear starting point by " \
+    "helping you focus on question types rather than individual sections. You'll discover that some questions are far more predictable, and therefore " \
+    "easier to prepare for, than others. \n" 
+    "\n"
+    "Across Paper 1 there are many repeatable question types. For example, on average, Language Focused (LF) questions account for 20% of the paper! " \
     "These questions are not by any means restricted to the final 'Language Section'. \n " \
     "\n" \
     "Knowing where your strengths lie in answering these different question types " \

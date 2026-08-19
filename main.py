@@ -20,7 +20,7 @@ st.markdown(
 )
 
 # VISUAL SETUP
-tab1, tab2, tab3 = st.tabs(["Q-type def", "Reflection Tool", "Insights" ])
+tab1, tab2, tab3 = st.tabs(["Definitions", "Reflection Tool", "Insights" ])
 
 with tab1:
     q_type()
@@ -44,7 +44,7 @@ st.sidebar.markdown("Created by [Greg Carter](https://www.linkedin.com/in/gregor
 
 st.sidebar.header('', divider='green')
 
-with st.sidebar.expander("Quick Q-type Definitions:"):
+with st.sidebar.expander("Quick Definitions:"):
     st.markdown("**Direct Concept Question (DCQ):** \n" \
     "Direct mention of a concept the question wants you to focus on and apply.")
 
