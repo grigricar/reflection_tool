@@ -1,0 +1,20 @@
+[project]
+name = "reflection_tool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit",
+    "pandas",
+    "seaborn",
+    "plotly",
+    "openpyxl",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+    "itables",
+    "nbformat",
+]
