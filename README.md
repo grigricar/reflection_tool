@@ -3,7 +3,7 @@
 
  <div align="center">
   <a href="https://reflectiontool.streamlit.app">
-  <img src="media/reflection_tool.png" height="80%" width="80%"()></a><br>
+  <img src="media/reflection_tool.png" height="80%" width="80%"></a><br>
   <b>Reflection Tab</b>
 </div>
 
@@ -38,8 +38,8 @@ The most dynamic part of the application allows users to submit their results fo
 - <b>Approaching the scope for a project.</b> 
 - <b>Gathering Data, Cleaning Data: data types, missing data, imputing data, handling text and typos, duplicates, outliers.</b>
 - <b>EDA: filtering, sorting, grouping, joining, visualisation.</b>
-- <b>App development and data management; designed to update all metrics and tools as more data is potentially added over time.</b>
-- <b></b> 
+- <b>App development, deployment and data management; designed to update all metrics and tools as more data is potentially added over time.</b>
+  
 
 
 </br>
@@ -71,7 +71,7 @@ Here it was clear that there was no definitive trend in questions types (as I de
 
 <b>3. App design and Visualisation </b>
 
-One of the key aims of the application was to allow students and teachers to explore the findings and patterns in their own way. The 'insights' tab in the app is effectively dashboard, where I layered in interactivity to my EDA charts. The charts were a lesson in programming and app integration. The graphs used are drawn from **matplotlib** based charts, seaboard adapted graphs and finally **plotly**. I should have used more plotly graphs from the beginning as they do allow for more user interactivity automatically. Yet I gained valuable knowledge of how to adjust the visualisation, and apply user inputs to how values are filtered. 
+One of the key aims of the application was to allow students and teachers to explore the findings and patterns in their own way. The 'insights' tab in the app is effectively dashboard, where I layered in interactivity to my EDA charts. The charts were a lesson in programming and app integration. The graphs used are drawn from **matplotlib** based charts, **seaborn** adapted graphs and finally **plotly**. I should have used more plotly graphs from the beginning as they do allow for more user interactivity automatically. Yet I gained valuable knowledge of how to adjust the visualisation, and apply user inputs to how values are filtered. 
 
 By the end of the project **plotly** was my go-to. The level of insight that can be explored is surprisingly fine-grained. Here is a demonstration of the frequency of certain concepts within visual literacy questions across the papers considered:
 
@@ -88,33 +88,31 @@ Other than layout and accessibility, the biggest challenge of the project was to
 
 <h2>Final ideas and Questions</h2>
 
-
-<b>1. Maven Music Project (and EDA course more generally)</b>
-
-The aim of the project was to investigate the increasing churn rate a 'Maven Music Store', for which the data were complied synthetically. The course as. a whole and the mini-project went quickly for me. From my statistics courses, the understanding of outliers, distributions, scaling and transformation of variables etc. was already in place. From the previous SQL project and dashboard, I was also familiar with the processes of filtering, sorting, joining.
-
- What I gained was primarily, adapting these process to a python workflow with the view of using python for the machine learning application in the future. The python workflow is catching. Already after this project I can see how convenient it is to structure an investigation in one primary environment. Pandas has so much flexibility! In particular the Date Time processing, the creation of dummy variables, tha handy methods for dealing with NaN values and duplicates stood out for me has extremely well thought out. It would not take long for all these tools to become second nature.
-
-
 <p align='center'>
-<img src="Data/discount.png" height="50%" width="50%"/>
+<img src="static/header3.png" height="90%" width="90%"/>
 </p>
 
 </br>
 
-<b>2. Key reflections and insights:</b>
+This project continues to thrill me because it is the first where I have developed a completely unique dataset, developed insights, and created and deployed a tool where users can gain value (and hopefully more marks!)
+
+The tool will be acessibe through my YouTube channel, and if it proves to be useful, I will put the option out there for me to add in specific prelim papers from various schools so that reflection can be attained more instantly in the lead up to final examinations. A real, value add, data-driven reflective tool --
+this is what data and tech is all about.
+
+The is so much scope to develop the tool in different ways. For the future:
+
 
 </br>
 
 
--  <b>The plotting, especially using the handy seaborn .pairplot() function, is powerful</b>
--  <b> When there is lots of discrete and binomial data correlation metrics can be more useful. </b>
--  <b>I know in R there is method used to overcome overlapping point using a "jitter", I need to investigate the Python equivalent. </b>
--  <b>My modeling in R is sound, but I cannot wait to combine this EDA process with modeling in Python.</b>
-- <b> The course gave important insight into the Scoping process; in the end this is where project experience and interaction with stakeholders matters most. </b>
-- <b> Terminology is surprisingly slippery. I often panic that I do not know what a 'label' or 'feature' is, but it is such a relief to find these terms are just standard substitutes for "Response" and "Explanatory" variables etc.  </b> 
-- <b> I really value the outline to "Supervised" and "Unsupervised Learning". I am already familiar with much of the modeling and classification techniques used here! I just need to update my Python processes. 
-
+-  <b>Streamlit is now a got-to for my python development workflow!</b>
+-  <b>I now appreciate the design that goes into a reliable pipeline. When new data is added will all the tools and measures adapt seamlessly?</b>
+-  <b>If more papers as well as student mark data could be obtained (IEB?), a model could be developed to predict paper average. I think this may be a more reliable measure of paper difficulty (Blooms is terrible for English P1!)</b>
+-  <b>Given the possibility above, teachers could use a predictive supervised learning tool to gauge the difficulty of prelim papers set, and how their cohort performs relative to a predicted national average.</b>
+- <b>How can I add an LLM based chatbot to the reflection process to use the data and provide suggested actions and example questions?</b>
+- <b>LLM use, with markdown prompting, can be very handy in fairly accurate analysis of papers. Could a tool be developed to automatically add prelim papers uploaded by users?</b> 
+- <b> How could a user history be stored so that desired improvements could be tracked over time? </b>
+- <b> Could I explore persistent database storage options? </b>
 
   
 
