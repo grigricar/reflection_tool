@@ -2,24 +2,21 @@
 
 
  <div align="center">
-  <img src="Data/Gemini_Generated_Image_n2vtz3n2vtz3n2vt.png" height="60%" width="60%"><br>
-  <b>Maven Music</b>
+  <a href="https://reflectiontool.streamlit.app">
+  <img src="media/reflection_tool.png" height="80%" width="80%"()></a><br>
+  <b>Reflection Tab</b>
 </div>
 
 <br />
 <h2>Project Description</h2>
 <p>
-This project combined two worlds of my experience: English Teaching and Data Analytics. Paper 1 is a source of frustration for many students and teachers. Usually, it takes years of 
-teaching experience to gain an intuition for the most obvious question types to target and the best methods to use. In this project, a complete analysis of a number of final papers 
-is given, where I developed my own framework to focus on questions types and concepts rather than section by section analysis because there is actually a huge degree of overlap in skills 
-between sections. 
+This project combined two worlds of my experience: English Teaching and Data Analytics. Paper 1 is a source of frustration for many students and teachers. Usually, it takes years of teaching experience to gain an intuition for the most obvious question types to target and the best methods to use. In this project, a complete analysis of a number of final papers is given, where I developed my own framework to focus on questions types and concepts rather than section by section analysis because there is actually a huge degree of overlap in skills  between sections. 
 
-This project also allowed me to implement much of what I have learned from creating the data, cleaning it exploring it, and finally deploying it in the form of a Streamlit app. 
-The insights derived from the EDA, are displayed in a dashboard format, which allows students and teachers to track the most frequently occurring concepts that crop up in various
-question types. 
+This project also allowed me to implement much of what I have learned from creating the data, cleaning it exploring it, and finally deploying it in the form of a [Streamlit](https://streamlit.io) app. The insights derived from the EDA, are displayed in a dashboard format, which allows students and teachers to track the most frequently occurring concepts that crop up in various question types. 
 
-The most dynamic part of the application allows users to submit their results for past papers and receive a report detailing what question types they can most improve in, and what 
-concepts most urgently require revision. 
+The most dynamic part of the application allows users to submit their results for past papers and receive a report detailing what question types they can most improve in, and what concepts most urgently require revision. 
+
+[Jump into the app](https://reflectiontool.streamlit.app), navigate with the tabs, play around with entering some marks and you will soon get the hang of it!
 </p>
 </p>
 
@@ -32,10 +29,12 @@ concepts most urgently require revision.
 - <b>Command line prompting</b>
 - <b>HTML </b>
 - <b>Streamlit - for app design and deployment </b>
+- <b>Claude</b>
 
 <h2> Skills </h2>
 
 - <b>Data prep and EDA workflow.</b>
+- <b>MD structured prompting</b>
 - <b>Approaching the scope for a project.</b> 
 - <b>Gathering Data, Cleaning Data: data types, missing data, imputing data, handling text and typos, duplicates, outliers.</b>
 - <b>EDA: filtering, sorting, grouping, joining, visualisation.</b>
@@ -44,6 +43,23 @@ concepts most urgently require revision.
 
 
 </br>
+<h2>Process</h2>
+
+ <b>1. Database</b>
+ </br>
+ [<img src="media/prompt.png">]
+
+I used my own expertise and trial and error to formulate question type definitions and I applied my analysis to two papers. This took far too long. I then created a full markdown(MD) prompt, outlining my analysis, with examples and ran this through Gemini to produce civ outputs replicating my analysis on new papers. After some tweaking of constraints and wording, it did work but the accuracy was at about 60% (I had to do much editing!). 
+
+Thereafter a used my same MD with Claude and had substantially better results. The accuracy was at about 85%. This allowed me to spend less time editing. 
+
+What surprised me was that as the requirements and scope of the project grew, I actually ended up refining, adding and editing the original data. This was where the back and forth between Excel and Python was handy. 
+
+<b>2. Cleaning and EDA </b>
+
+
+
+
 
 <h2>Reflection and Questions</h2>
 
