@@ -47,7 +47,7 @@ The most dynamic part of the application allows users to submit their results fo
 
  <b>1. Database</b>
  </br>
- [<img src="media/prompt.png">]
+ <img src="media/prompt.png">
 
 I used my own expertise and trial and error to formulate question type definitions and I applied my analysis to two papers. This took far too long. I then created a full markdown(MD) prompt, outlining my analysis, with examples and ran this through Gemini to produce civ outputs replicating my analysis on new papers. After some tweaking of constraints and wording, it did work but the accuracy was at about 60% (I had to do much editing!). 
 
@@ -61,23 +61,23 @@ Having put together the database myself I thought the cleaning would be minimal 
 
 The EDA itself was an eye-opening phase of the project. Many of the findings would be adapted and visually conveyed in the final app. There was also much back and forth between the EDA and the app design. The value to the user hand to be considered, as in the case of deciding whether to display average question type count per question type or average percentage marks per question type, across all the papers considered. Average marks made far more sense as a means of determining the importance of each question type in each paper.
 
-[<img src="media/eda_qt.png">]
+<img src="media/eda_qt.png">
 
 One of the more significant findings was visualising the fluctuations in questions type using a stacked bar chart:
 
-[<img src="media/stacked_barchart.png">]
+<img src="media/stacked_barchart.png">
 
 Here it was clear that there was no definitive trend in questions types (as I defined them) in papers over time, but there clearly were two extremes of types of paper: ones that focused more on concept based knowledge, and others that focused more on pure inference skills. 
 
 <b>3. App design and Visualisation </b>
 
-One of the key aims of the application was to allow students and teachers to explore the findings and patterns in their own way. The 'insights' tab in the app is effectively dashboard, where I layered in interactivity to my EDA charts. The charts were a lesson in programming and app integration. The graphs used are drawn from **matplotlib** based charts, **seaborn** adapted graphs and finally **plotly**. I should have used more plotly graphs from the beginning as they do allow for more user interactivity automatically. Yet I gained valuable knowledge of how to adjust the visualisation, and apply user inputs to how values are filtered. 
+One of the key aims of the application was to allow students and teachers to explore the findings and patterns in their own way. The 'insights' tab in the app is effectively dashboard, where I layered in interactivity to my EDA charts. The charts were a lesson in programming and app integration. The graphs used are drawn from **matplotlib** based charts, **seaborn** adapted graphs and finally **plotly**. I should have used more **plotly** graphs from the beginning as they do allow for more user interactivity automatically. Yet I gained valuable knowledge of how to adjust the visualisation, and apply user inputs to how values are filtered. 
 
 By the end of the project **plotly** was my go-to. The level of insight that can be explored is surprisingly fine-grained. Here is a demonstration of the frequency of certain concepts within visual literacy questions across the papers considered:
 
-[<img src="media/concept_frequency.png">]
+<img src="media/concept_frequency.png">
 
-**streamlit** itself was an incredible platform/library to explore and it allowed for many handy charts to be included, with expansion and layout options. This was perhaps my biggest learning curve in the project. Using Youtube, documentation and AI, I became a **streamlit** devote by the end of the project. Each function mastered opened up new application possibilities. The fact that the platform is geared towards presenting data, and sharing data tools is evident, and I can see **streamlit** becoming my go-to dash boarding and Data Science deployment platform to quickly get my projects shared.
+**Streamlit** itself was an incredible platform/library to explore and it allowed for many handy charts to be included, with expansion and layout options. This was perhaps my biggest learning curve in the project. Using Youtube, documentation and AI, I became a **streamlit** devote by the end of the project. Each function mastered opened up new application possibilities. The fact that the platform is geared towards presenting data, and sharing data tools is evident, and I can see **streamlit** becoming my go-to dash boarding and Data Science deployment platform to quickly get my projects shared.
 
 Other than layout and accessibility, the biggest challenge of the project was to create the reflection tool. This involved updating the data based on user input and then using visualisation and EDA techniques to generate a unique report for each student based on the examination they are reflecting on. By selecting a paper a looped option of question inputs is generated. The report and collection are the part of the project that I am most proud of developing. This produced the most bugs and required the most patience to pull off and the result is a tool that can genuinely by used to target areas for improvement. Used together with the 'insights' tab a student and teacher can quickly determine what concepts to focus on and how frequently specific concepts occur. 
 
@@ -96,8 +96,8 @@ Other than layout and accessibility, the biggest challenge of the project was to
 
 This project continues to thrill me because it is the first where I have developed a completely unique dataset, developed insights, and created and deployed a tool where users can gain value (and hopefully more marks!)
 
-The tool will be acessibe through my YouTube channel, and if it proves to be useful, I will put the option out there for me to add in specific prelim papers from various schools so that reflection can be attained more instantly in the lead up to final examinations. A real, value add, data-driven reflective tool --
-this is what data and tech is all about.
+The tool will be accessible through my YouTube channel, and, if it proves to be useful, I will put the option out there for me to add in specific prelim papers from various schools so that reflection can be attained more instantly in the lead up to final examinations. A real, value add, data-driven reflective tool --
+this is what data and tech is all about!
 
 The is so much scope to develop the tool in different ways. For the future:
 
