@@ -43,7 +43,7 @@ The most dynamic part of the application allows users to submit their results fo
 
 
 </br>
-<h2>Process</h2>
+<h2>Process Reflection</h2>
 
  <b>1. Database</b>
  </br>
@@ -57,11 +57,36 @@ What surprised me was that as the requirements and scope of the project grew, I 
 
 <b>2. Cleaning and EDA </b>
 
+Having put together the database myself I thought the cleaning would be minimal -- I was wrong. Both the cleaning and EDA required much pandas wrangling and entry correction. There were invisible white spaces. There were errors in categorical naming. 
+
+The EDA itself was an eye-opening phase of the project. Many of the findings would be adapted and visually conveyed in the final app. There was also much back and forth between the EDA and the app design. The value to the user hand to be considered, as in the case of deciding whether to display average question type count per question type or average percentage marks per question type, across all the papers considered. Average marks made far more sense as a means of determining the importance of each question type in each paper.
+
+[<img src="media/eda_qt.png">]
+
+One of the more significant findings was visualising the fluctuations in questions type using a stacked bar chart:
+
+[<img src="media/stacked_barchart.png">]
+
+Here it was clear that there was no definitive trend in questions types (as I defined them) in papers over time, but there clearly were two extremes of types of paper: ones that focused more on concept based knowledge, and others that focused more on pure inference skills. 
+
+<b>3. App design and Visualisation </b>
+
+One of the key aims of the application was to allow students and teachers to explore the findings and patterns in their own way. The 'insights' tab in the app is effectively dashboard, where I layered in interactivity to my EDA charts. The charts were a lesson in programming and app integration. The graphs used are drawn from **matplotlib** based charts, seaboard adapted graphs and finally **plotly**. I should have used more plotly graphs from the beginning as they do allow for more user interactivity automatically. Yet I gained valuable knowledge of how to adjust the visualisation, and apply user inputs to how values are filtered. 
+
+By the end of the project **plotly** was my go-to. The level of insight that can be explored is surprisingly fine-grained. Here is a demonstration of the frequency of certain concepts within visual literacy questions across the papers considered:
+
+[<img src="media/concept_frequency.png">]
+
+**streamlit** itself was an incredible platform/library to explore and it allowed for many handy charts to be included, with expansion and layout options. This was perhaps my biggest learning curve in the project. Using Youtube, documentation and AI, I became a **streamlit** devote by the end of the project. Each function mastered opened up new application possibilities. The fact that the platform is geared towards presenting data, and sharing data tools is evident, and I can see **streamlit** becoming my go-to dash boarding and Data Science deployment platform to quickly get my projects shared.
+
+Other than layout and accessibility, the biggest challenge of the project was to create the reflection tool. This involved updating the data based on user input and then using visualisation and EDA techniques to generate a unique report for each student based on the examination they are reflecting on. By selecting a paper a looped option of question inputs is generated. The report and collection are the part of the project that I am most proud of developing. This produced the most bugs and required the most patience to pull off and the result is a tool that can genuinely by used to target areas for improvement. Used together with the 'insights' tab a student and teacher can quickly determine what concepts to focus on and how frequently specific concepts occur. 
+
+
+  
 
 
 
-
-<h2>Reflection and Questions</h2>
+<h2>Final ideas and Questions</h2>
 
 
 <b>1. Maven Music Project (and EDA course more generally)</b>
@@ -70,13 +95,6 @@ The aim of the project was to investigate the increasing churn rate a 'Maven Mus
 
  What I gained was primarily, adapting these process to a python workflow with the view of using python for the machine learning application in the future. The python workflow is catching. Already after this project I can see how convenient it is to structure an investigation in one primary environment. Pandas has so much flexibility! In particular the Date Time processing, the creation of dummy variables, tha handy methods for dealing with NaN values and duplicates stood out for me has extremely well thought out. It would not take long for all these tools to become second nature.
 
- Because of my familiarity with base python, I learnt a few lessons in workflow. I was in the habit of saving process as multiple variables, but they quickly pile up. I learnt quickly not to update the original data frame and to use the data manipulations with some consideration and testing before saving the change or manipulation to a new variable as table. I can also make better use of the chaining capabilities of methods and attributes to be more efficient. I enjoyed using Jupyter as a tool for validation and exploration. Going back to a <b>.dtypes</b> or <b>.values_counts()</b> output after a change was made became a handy way of confirming changes to category allocations or data types. 
-
- The flexibility of python as a tool is incredible. Not only does it record your methods and thinking, but it also serves as a reproducible process that could easily be applied to data inputs in the same form. I see the advantage of working with smaller chunks of data, say a month or three, before leaping to apply the analysis over years. The reproducibility helps to build up the analysis form stage to stage. 
-
- Moreover, after the cleaning, the EDA allows you to decompose the data into multiple mini tables creating new combinations of insights. For example, when determining the user percentage of listening to Pop and Podcasts, joins and counts  and groupbys between multiple tables allowed me to arrive at the solution and then simply combine the percentage found to the final model table. Data is easily broken down, put into new combinations, and metrics, and then recombined into final tables -- this is the essential process of investigation and model development and EDA is critical. Also, in place of using the <b>.count()</b> and <b>.len()</b> methods I applied ot achieve this the solution simply used a <b>.getdummies()</b> approach to achieve the same outcome. There a multiple ways of achieving the same outcome.  
-
- The final product was a model table geared towards prediction using a logistic model approach to determine if a customer would cancel or not. It was already found in the exploration that the customers who were given discounts that would then expire would be a high coefficient feature for modeling the outcome.  
 
 <p align='center'>
 <img src="Data/discount.png" height="50%" width="50%"/>
