@@ -12,3 +12,7 @@ wheels/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# .DS_Store
+.DS_Store
+.vscode/
