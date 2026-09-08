@@ -69,6 +69,7 @@ This addition also implemented a full database storage and retrieval using Supab
 
  <b>1. Database</b>
  </br>
+ 
  <img src="media/prompt.png">
 
 I used my own expertise and trial and error to formulate question type definitions and I applied my analysis to two papers. This took far too long. I then created a full markdown(MD) prompt, outlining my analysis, with examples and ran this through Gemini to produce civ outputs replicating my analysis on new papers. After some tweaking of constraints and wording, it did work but the accuracy was at about 60% (I had to do much editing!). 
@@ -113,6 +114,9 @@ The first version of this project lived entirely on local pickle files. This is 
 
 
 The bigger shift, though, was realising Claude's API isn't just for chat. Everything I'd explored earlier through Claude's notebook drops (system prompts, stop sequences, message structure) was really just laying the groundwork for the part of the app I'm most excited about: the <b>Paper Upload</b> tab. Rather than asking Claude a question and reading back prose, I define a strict <b>tool schema</b> (a JSON Schema describing exactly what fields I need — school name, year, grade, paper number, time, total marks) and pass it into the API call. Claude then returns validated, structured arguments matching that schema instead of a block of text I'd have to parse myself. This is the difference between "asking an AI a question" and "using an AI as a component in a pipeline". The output is highly reproducible an accurate 90% of the time. Data is ready to  be inserted straight into the Supabase table, no manual parsing or regex required.
+
+The final tradeoff to consider was that of token cost vs accuracy. *Claude Haiko 4.5* was used for the lighter task of coverpage
+validation. *Claude Sonnet 5* performs the more analytically demanding task of classification. It does so with high accuracy. Average cost comes in at around $0.20 per call. 
 
 <div align ='center'><img src="media/claude_API.png" height = 80% width ='80%'></div>
 
