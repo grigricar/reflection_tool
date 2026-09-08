@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly.express as px
-
+from supabase import create_client, Client
 
 def reflection_tool(data_source):
 
@@ -15,23 +15,60 @@ def reflection_tool(data_source):
     "progress much faster if you learn to how to reflect on mistakes made and target problematic areas. This is precisely what this " \
     "tool is designed to help you achieve.\n" \
     "\n" \
-    "Simply enter your results for a past paper to produce a normal section summary, but also a question-type summary that will help " \
-    "you to know where to improve and offer suggestions for particular concept improvements. All of your data is stored locally on " \
-    "your browser -- none of your personal data is shared and only you have access to it. Download the report to keep your results and the recommendations. \n" \
+    "Simply enter your results for a past paper (National IEB or an uploaded prelim/IEB structured paper) to produce a normal section summary, but also a question-type summary that will help " \
+    "you to know where to improve and offer suggestions for particular concepts for yuo to focus on. All of your data is stored locally on " \
+    " none of your data is shared or permanently stored. Only you have access to it. Download the report to keep your results and the recommendations. \n" \
     "\n" \
-    "Proceed to the 'insights' tab to explore fully the underlying concepts and skills in many of the question types. Use the 'Question Search' in the sidebar to find " \
-    "similar question types in other past papers for you to actively address the areas you most want to improve in most."  )
+    "Proceed to the 'Insights' tab to explore fully the underlying concepts and skills in many of the question types. Use the 'Question Search' in the sidebar to find " \
+    "similar question types in other past papers for you to actively address the areas you most want to improve in most. Navigate to the 'Paper Upload' tab to add a paper. "  )
 
     #Working out getting user info for a selected paper
 
-    paper = pd.read_pickle(data_source)
-    paper_list = paper['ID'].unique()
+    paper = data_source.copy()
 
-    exam_choice = st.selectbox(
-        "Choose your past paper:",
-        paper_list, width= 300
-        )
-    selected_paper = paper[paper['ID'] == exam_choice]
+    #supabase connection established for uploaded paper data
+    @st.cache_resource
+    def init_connection() -> Client:
+       return create_client(st.secrets["SUPABASE_URL"], st.secrets["SUPABASE_KEY"])
+
+    supabase = init_connection()
+
+    retrieval = (supabase.table('papers')
+                 .select("paper_code:code")
+                 .execute()
+    )
+
+    prelim_codes = retrieval.data
+    prelim_list = [row['paper_code'] for row in prelim_codes]
+
+    user_choice = st.radio("Choose:", ["National IEB Paper 1", "Uploaded Prelim Paper"], horizontal=True)
+
+    if user_choice == "National IEB Paper 1":
+
+        paper_list = paper['ID'].unique()
+
+        exam_choice = st.selectbox(
+            "Choose your past paper:",
+            paper_list, width= 300
+            )
+        selected_paper = paper[paper['ID'] == exam_choice]
+
+    elif user_choice == "Uploaded Prelim Paper":
+        
+            exam_choice = st.selectbox(
+                "Choose your past paper:",
+                prelim_list, width= 300
+                )
+            
+            paper_fetch = (supabase.table('paper_questions')
+                 .select('ID:paper_code, Question:question, Section:section, Type:type, Subskill:subskill, Keywords:keywords, "Question Total":question_total, Count:count')
+                 .eq('paper_code', exam_choice)
+                 .execute()
+    )
+            selected_paper = pd.DataFrame(paper_fetch.data)
+            
+
+
 
     input_marks = []
     with st.form("exam_form"):

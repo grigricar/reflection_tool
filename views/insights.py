@@ -22,18 +22,24 @@ def insights(data_input):
                 'VL': "Visual Literacy",
     }
     #remapping and grouping data
-    paper_eda = pd.read_pickle(data_input)
+    paper_eda = data_input.copy()
     paper_eda['Type'] = paper_eda['Type'].map(new_map)
+
+    
+
+    LATEST_YEAR = paper_eda['ID'][1][0:4]
+    NUM_PAPERS = paper_eda['ID'].nunique()
+
     paper_id_type_sort = paper_eda.groupby(["ID", "Type"])['Question Total'].sum().reset_index()
 
     st.title("Insights")
     st.write("Use this section to explore the findings made across English IEB paper Is" \
-    " from 2020-2025. You can use the insights to discover how papers differ and gauge how much " \
-    "benefit there is to improving specific question types. \n" \
+    f" from 2020-{LATEST_YEAR}. You can use the insights to discover how papers differ and gauge how much " \
+    "benefit there is to improving in specific question types. \n" \
     "\n" \
     "The final insights are particularly valuable in tracking which skills and concepts appear most " \
     "frequently across papers. You can construct handy, data informed, checklists for revision to target areas you want " \
-    "to improve in most (or request last minute recaps on critical concepts from teachers!). Note: At currently only 11 papers \n" \
+    f"to improve in most (or request last minute recaps on critical concepts from teachers!). Note: At currently only {NUM_PAPERS} papers \n" \
     "this is a small sample, so make judgments and predictions with caution.")
 
     st.subheader("1. Overview of Question Types in Past Papers" )
@@ -57,15 +63,15 @@ def insights(data_input):
         
         
         
-        custom_colours = [
-            '#8dd3c7',
-            '#ffffb3', 
-            '#bebada',
-            '#fb8072',
-            '#80b1d3',
-            '#fdb462',
-            '#b3de69'
-        ]
+        custom_colours = {
+            'Comparative':'#8dd3c7',
+            'Direct Concept Question':'#ffffb3', 
+            'Indirect Concept Question':'#bebada',
+            'Language Focused':'#fb8072',
+            'Pure Understanding':'#80b1d3',
+            'Summary':'#fdb462',
+            'Visual Literacy':'#b3de69'
+        }
         try:
             # 1. Instantiate the figure and axis explicitly
             fig, ax = plt.subplots(figsize=(12, 8))
@@ -78,7 +84,7 @@ def insights(data_input):
                 hue="Type",
                 multiple="stack",
                 shrink=0.8,
-                palette= 'Set3',
+                palette= custom_colours,
                 ax=ax,  # Pass the explicit axis here
             )
 
@@ -156,7 +162,7 @@ def insights(data_input):
             )
 
         # 4. Use `ax` methods instead of general `plt` calls where possible
-        ax.set_title("Average Marks Allocated to Question Type (papers: 2020-2025)", fontsize=14, pad=15)
+        ax.set_title(f"Average Marks Allocated to Question Type (papers: 2020-{LATEST_YEAR})", fontsize=14, pad=15)
         ax.set_xlabel("Paper ID", fontsize=12)
         ax.set_ylabel("Avg Marks By Question Type", fontsize=12)
         ax.tick_params(axis="x", rotation=45)
@@ -172,7 +178,7 @@ def insights(data_input):
         "- It is more useful to use these averages for question type than to try predict trends. \n" \
         "- Pure Understanding Questions account for the largest percentage of marks in a typical paper. \n" \
         "- The large chunk of Pure Understanding (the most difficult question type to actively prepare for) is one explanation for the perceived pointlessness of preparing for paper 1. \n" \
-        "- Language Focused questions tend to take up approximately 20% of the paper. Well worth putting study time into. \n" \
+        "- Language Focused questions tend to take up approximately 19% of the paper. Well worth putting study time into. \n" \
         "- Visual Literacy based questions take up only approximately 11% of a paper -- less than half of the crit lit section. \n" \
         "- Summary and Comparative questions are a giveaway considering how predictable their form is. Practising answering technique here will lead to improvement. \n " \
         "- Recommended study approach: if pushed for time, and looking at two extremes of P1 is not an option, **reflect and practise on a single paper that approaches the averages: 2024MAY or 2021NOV.**")
@@ -265,13 +271,13 @@ def insights(data_input):
         # Data prep
         paper_eda['Subskill'] = paper_eda['Subskill'].map(new_labels)
         language_subskills = paper_eda[paper_eda['Subskill'] == selected_subskill]
-        language_subskills = language_subskills[['ID', 'Question', 'Keywords', 'count', 'Question Total']]
-        language_subskills = language_subskills.groupby('Keywords')[['count', 'Question Total']].sum().reset_index()
+        language_subskills = language_subskills[['ID', 'Question', 'Keywords', 'Count', 'Question Total']]
+        language_subskills = language_subskills.groupby('Keywords')[['Count', 'Question Total']].sum().reset_index()
 
-        language_subskills.sort_values('count', ascending=False, inplace=True)
+        language_subskills.sort_values('Count', ascending=False, inplace=True)
 
         with st.expander("Language subskills table"):
-             st.dataframe(language_subskills[['Keywords', 'count']], hide_index=True)
+             st.dataframe(language_subskills[['Keywords', 'Count']], hide_index=True)
 
         # Bargraph for concept frequency:
         title_string = f"Frequency of all concepts appearing in {selected_subskill}"
@@ -279,14 +285,14 @@ def insights(data_input):
 
         fig = px.bar(
         language_subskills,
-        x="count",
+        x="Count",
         y="Keywords",
         title = title_string,
-        subtitle= "Taken from papers spanning 2020-2025",
+        subtitle= f"Taken from papers spanning 2020-{LATEST_YEAR}",
         color = "Keywords",
         color_discrete_sequence=[substring_colour],
         orientation= 'h',
-        text='count',
+        text='Count',
         template='plotly_white',
         height=500
         )
@@ -294,7 +300,7 @@ def insights(data_input):
         fig.update_layout(
         showlegend=False,
         yaxis_title = 'Concepts',
-        xaxis_title = 'Frequency of Concept From 2020-2025', 
+        xaxis_title = f'Frequency of Concept From 2020-{LATEST_YEAR}', 
           
         )
         fig.update_yaxes(          
@@ -331,26 +337,26 @@ def insights(data_input):
         selected_qtype = st.selectbox("Select a Subskill:", options=list(qtype_dict.keys()))
 
         qtypes_selection = paper_eda[paper_eda['Type'] == selected_qtype]
-        qtypes_selection = qtypes_selection.groupby('Keywords')[['count', 'Question Total']].sum().reset_index()
+        qtypes_selection = qtypes_selection.groupby('Keywords')[['Count', 'Question Total']].sum().reset_index()
 
-        qtypes_selection.sort_values('count', ascending=False, inplace=True)
+        qtypes_selection.sort_values('Count', ascending=False, inplace=True)
 
         with st.expander("Q-types concept table"):
-                    st.dataframe(qtypes_selection[['Keywords', 'count']], hide_index=True)                            
+                    st.dataframe(qtypes_selection[['Keywords', 'Count']], hide_index=True)                            
 
         title_string2 = f"Frequency of all concepts appearing in {selected_qtype}"
         substring_colour2 = qtype_dict[selected_qtype]
 
         fig = px.bar(
         qtypes_selection,
-        x="count",
+        x="Count",
         y="Keywords",
         title = title_string2,
-        subtitle= "Taken from papers spanning 2020-2025",
+        subtitle= f"Taken from papers spanning 2020-{LATEST_YEAR}",
         color = "Keywords",
         color_discrete_sequence=[substring_colour2],
         orientation= 'h',
-        text='count',
+        text='Count',
         template='plotly_white',
         height=800
         )
@@ -358,7 +364,7 @@ def insights(data_input):
         fig.update_layout(
         showlegend=False,
         yaxis_title = 'Concepts',
-        xaxis_title = 'Frequency of Concept From 2020-2025', 
+        xaxis_title = f'Frequency of Concept From 2020-{LATEST_YEAR}', 
             
         )
         fig.update_yaxes(          

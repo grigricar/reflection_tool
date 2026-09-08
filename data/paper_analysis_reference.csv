@@ -1,0 +1,393 @@
+ID,Question,Section,Type,Subskill,Keywords,QuestionTotal
+2025NOV,1.1,Comp,ICQ,style,style,2
+2025NOV,1.2,Comp,DCQ,fos,metaphor,3
+2025NOV,1.3,Comp,PU,argumentation,positions,4
+2025NOV,1.4,Comp,LF,sentence structure,rhetorical questions,3
+2025NOV,1.5,Comp,DCQ,diction,intention/tone/diction,4
+2025NOV,1.6,Comp,ICQ,fos,figure of speech,3
+2025NOV,1.7,Comp,PU,inference,"explain, means",2
+2025NOV,1.8,Comp,C,mixed,"critically discuss, specific diction",4
+2025NOV,2.0,Summary,Summary,synthesis,"speech, junior grades",10
+2025NOV,3.1,Seen,LF,punctuation,rhythm,3
+2025NOV,3.2,Seen,LF,language,pronouns,2
+2025NOV,3.3,Seen,PU,diction,effective,3
+2025NOV,3.4,Seen,PU,diction,bittersweet,2
+2025NOV,3.5,Seen,C,mixed,"critically evaluate, specific details",5
+2025NOV,4.1,Unseen,ICQ,fos,imagery,3
+2025NOV,4.2,Unseen,PU,diction,use of,2
+2025NOV,4.3,Unseen,DCQ,style,literal and figurative,3
+2025NOV,4.4,Unseen,DCQ,rhythm,alliteration,3
+2025NOV,4.5,Unseen,C,mixed,"personification, mood, specfic details",4
+2025NOV,5.1,Crit,LF,sentence structure,imperative declarative iterrogative,3
+2025NOV,5.2.1,Crit,LF,error,full sentence,1
+2025NOV,5.2.2,Crit,DCQ,fos,cliché,3
+2025NOV,5.3.1,Crit,VL,diction,hashtag,2
+2025NOV,5.3.2,Crit,LF,language,word skill,2
+2025NOV,5.4,Crit,VL,style,layout,4
+2025NOV,5.5.1,Crit,LF,sentence structure,simple compound complex,2
+2025NOV,5.5.2,Crit,LF,sentence structure,evaluate effectiveness (two sentences),2
+2025NOV,5.6,Crit,VL,style,infographic,2
+2025NOV,5.7,Crit,VL,style,visual + verbal details,4
+2025NOV,6.1,Lang,LF,punctuation,colon,1
+2025NOV,6.2,Lang,LF,punctuation,parenthesis,1
+2025NOV,6.3,Lang,LF,error,tautology,1
+2025NOV,6.4.1,Lang,LF,error,split infinitive,1
+2025NOV,6.4.2,Lang,LF,language,word skill,1
+2025NOV,6.4.3,Lang,LF,punctuation,hyphen,1
+2025NOV,6.4.4,Lang,PU,diction,implied,1
+2025NOV,6.5.1,Lang,LF,sentence structure,subject verb object,1
+2025NOV,6.5.2,Lang,LF,error,concord,1
+2025NOV,6.5.3,Lang,LF,punctuation,apostrophe,1
+2025MAY,1.1,Comp,ICQ,fos,figure of speech,3
+2025MAY,1.2,Comp,PU,argumentation,"opinion, is valid",3
+2025MAY,1.3.1,Comp,LF,punctuation,dash,2
+2025MAY,1.3.2,Comp,PU,inference,mean by,2
+2025MAY,1.4,Comp,LF,language,acronym,3
+2025MAY,1.5,Comp,PU,diction,"comment, benign, malicious",3
+2025MAY,1.6,Comp,PU,diction,argument,2
+2025MAY,1.7,Comp,PU,argumentation,"credibility, add to, diminish",3
+2025MAY,1.8,Comp,C,mixed,"critically discuss, writer's opinion, to what extent",4
+2025MAY,2.0,Summary,Summary,synthesis,"principle's newsletter, to parents, screentime",10
+2025MAY,3.1,Seen,LF,punctuation,rhythm,3
+2025MAY,3.2,Seen,ICQ,fos,figure of speech,3
+2025MAY,3.3,Seen,ICQ,style,repetition,2
+2025MAY,3.4,Seen,PU,diction,"difference, meaning",3
+2025MAY,3.5,Seen,C,mixed,"critically discuss, attitude",4
+2025MAY,4.1,Unseen,PU,inference,"refer closely, depicted",2
+2025MAY,4.2,Unseen,DCQ,rhythm,enjambment,3
+2025MAY,4.3,Unseen,PU,argumentation,"discuss, ode",3
+2025MAY,4.4,Unseen,PU,diction,explain why,3
+2025MAY,4.5,Unseen,C,fos,"evaluate, imagery",4
+2025MAY,5.1.1,Crit,DCQ,fos,metaphor,3
+2025MAY,5.1.2,Crit,PU,diction,"meaning, change",2
+2025MAY,5.1.3,Crit,VL,style,values/message/interests/impact,3
+2025MAY,5.2,Crit,VL,style,colour and/or font,3
+2025MAY,5.3,Crit,C,style,values,3
+2025MAY,5.4,Crit,VL,style,visual + verbal details,4
+2025MAY,5.5,Crit,VL,style,values/message/interests/impact,2
+2025MAY,5.6,Crit,C,mixed,"critically evaluate, ethics, exaggeration",5
+2025MAY,6.1,Lang,LF,language,initialism,2
+2025MAY,6.2,Lang,LF,language,word skill,2
+2025MAY,6.3,Lang,LF,error,tautology,2
+2025MAY,6.4,Lang,LF,punctuation,hyphen,2
+2025MAY,6.5,Lang,LF,language,word skill,2
+2024NOV,1.1,Comp,DCQ,style,intention/tone/diction,2
+2024NOV,1.2.1,Comp,PU,inference,"explain, means",2
+2024NOV,1.2.2,Comp,LF,error,split infinitive,1
+2024NOV,1.3,Comp,PU,argumentation,"positions, argument",3
+2024NOV,1.4,Comp,DCQ,style,intention/tone/diction,3
+2024NOV,1.5,Comp,PU,argumentation,"conveyed, writer's approach",2
+2024NOV,1.6,Comp,PU,inference,explain why,2
+2024NOV,1.7,Comp,ICQ,style,style,3
+2024NOV,1.8,Comp,PU,argumentation,"argue, view",3
+2024NOV,1.9,Comp,C,mixed,"evaluate, views, specific examples",4
+2024NOV,2.0,Summary,Summary,synthesis,"LO workbook, sign language official",10
+2024NOV,3.1,Seen,LF,punctuation,rhythm,3
+2024NOV,3.2,Seen,DCQ,rhythm,enjambment,3
+2024NOV,3.3,Seen,ICQ,style,repetition,3
+2024NOV,3.4,Seen,PU,inference,"impact, use of",2
+2024NOV,3.5,Seen,C,style,"pronouns, mood",4
+2024NOV,4.1,Unseen,DCQ,fos,personification,2
+2024NOV,4.2,Unseen,ICQ,fos,imagery,3
+2024NOV,4.3,Unseen,LF,sentence structure,imperative declarative iterrogative,2
+2024NOV,4.4,Unseen,PU,argumentation,why,3
+2024NOV,4.5,Unseen,C,argumentation,"evaluate, imagery",5
+2024NOV,5.1,Crit,VL,inference,visual only,3
+2024NOV,5.2.1,Crit,LF,sentence structure,active/passive voice,2
+2024NOV,5.2.2,Crit,LF,sentence structure,evaluate effectiveness (two sentences),3
+2024NOV,5.3.1,Crit,PU,diction,why,2
+2024NOV,5.3.2,Crit,LF,punctuation,colon,2
+2024NOV,5.3.3,Crit,VL,style,visual + verbal details,4
+2024NOV,5.4,Crit,LF,language,word skill,2
+2024NOV,5.5,Crit,C,mixed,"critically evaluate, visual, verbal, details",4
+2024NOV,5.6,Crit,VL,style,visual metaphor/pun,3
+2024NOV,6.1,Lang,DCQ,diction,intention/tone/diction,2
+2024NOV,6.2,Lang,LF,punctuation,inverted commas,2
+2024NOV,6.3,Lang,VL,cartoon,visual + verbal details,2
+2024NOV,6.4,Lang,DCQ,style,register,1
+2024NOV,6.5,Lang,LF,language,interjection,1
+2024NOV,6.6,Lang,DCQ,fos,irony,2
+2024MAY,1.1,Comp,DCQ,style,register,2
+2024MAY,1.2,Comp,ICQ,style,style,2
+2024MAY,1.3,Comp,PU,argumentation,"connotations, evaluate, appropriate",4
+2024MAY,1.4,Comp,LF,sentence structure,rhetorical questions,3
+2024MAY,1.5,Comp,LF,language,morphology,1
+2024MAY,1.6,Comp,DCQ,style,juxtaposition,3
+2024MAY,1.7,Comp,DCQ,fos,metaphor,2
+2024MAY,1.8,Comp,PU,argumentation,"comment, effectiveness, social media",3
+2024MAY,1.9,Comp,C,mixed,"judge the extent, responsibility, specific reference",5
+2024MAY,2.0,Summary,Summary,synthesis,"school ambassadorship, speech, principal",10
+2024MAY,3.1.1,Seen,DCQ,style,sound device,3
+2024MAY,3.1.2,Seen,DCQ,fos,simile,2
+2024MAY,3.2.1,Seen,C,inference,"diction, rhythm, evaluate",4
+2024MAY,3.2.2,Seen,ICQ,style,enjambment,2
+2024MAY,3.3,Seen,C,mixed,"critically discuss, social commentary, emotional attachment",4
+2024MAY,4.1.1,Unseen,PU,inference,"respect, expressed",2
+2024MAY,4.1.2,Unseen,PU,inference,"discuss, hands, armamentarium",2
+2024MAY,4.2,Unseen,ICQ,style,style,4
+2024MAY,4.3,Unseen,ICQ,style,line structure,3
+2024MAY,4.4,Unseen,C,mixed,"critically discuss, effectiveness, words, human relationships",4
+2024MAY,5.1,Crit,VL,style,visual metaphor/pun,3
+2024MAY,5.2.1,Crit,PU,inference,"portrayed, quote",2
+2024MAY,5.2.2,Crit,LF,error,comma splice,2
+2024MAY,5.3,Crit,VL,style,colour and/or font,3
+2024MAY,5.4.1,Crit,LF,language,word skill,2
+2024MAY,5.4.2,Crit,PU,argumentation,"judge, difference in impact",3
+2024MAY,5.5,Crit,C,mixed,"critically evaluate, contrast, visual, verbal, details",4
+2024MAY,5.6,Crit,LF,punctuation,commas,2
+2024MAY,5.7,Crit,VL,style,visual only,4
+2024MAY,6.1.1,Lang,PU,diction,"connotation, antidotes, cheating",2
+2024MAY,6.1.2,Lang,LF,language,word skill,1
+2024MAY,6.2,Lang,LF,punctuation,dash,2
+2024MAY,6.3,Lang,LF,punctuation,apostrophe,1
+2024MAY,6.4,Lang,LF,sentence structure,subject verb object,1
+2024MAY,6.5,Lang,LF,error,concord,2
+2024MAY,6.6,Lang,LF,punctuation,italics,1
+2023NOV,1.1,Comp,PU,inference,"idiom, look beyond, context, title",2
+2023NOV,1.2,Comp,DCQ,diction,intention/tone/diction,2
+2023NOV,1.3,Comp,PU,structure,"account for, single-lined paragraph",2
+2023NOV,1.4,Comp,DCQ,fos,metaphor,3
+2023NOV,1.5,Comp,LF,punctuation,parenthesis,2
+2023NOV,1.6,Comp,PU,inference,"examples, views on democracy",3
+2023NOV,1.7,Comp,PU,diction,"disinformation, misinformation, meaning changed",3
+2023NOV,1.8,Comp,DCQ,style,intention/tone/diction,3
+2023NOV,1.9,Comp,C,mixed,"critically evaluate, quotation, tweet, further argument",5
+2023NOV,2.0,Summary,Summary,synthesis,"conference pamphlet, benefits, chatgpt",10
+2023NOV,3.1,Seen,LF,punctuation,rhythm,3
+2023NOV,3.2,Seen,DCQ,diction,intention/tone/diction,3
+2023NOV,3.3.1,Seen,ICQ,fos,figure of speech,3
+2023NOV,3.3.2,Seen,PU,argumentation,"criticism, drowned a young girl",2
+2023NOV,3.4,Seen,C,mixed,"perceive, threat, specific imagery",4
+2023NOV,4.1,Unseen,PU,diction,"permeate, positions",3
+2023NOV,4.2,Unseen,DCQ,fos,synecdoche,3
+2023NOV,4.3,Unseen,PU,inference,"comment, those in power",2
+2023NOV,4.4,Unseen,ICQ,style,repetition,3
+2023NOV,4.5,Unseen,C,mixed,"othering, mood, diction",4
+2023NOV,5.1,Crit,VL,style,slogan,3
+2023NOV,5.2,Crit,VL,inference,values/message/interests/impact,2
+2023NOV,5.3,Crit,PU,inference,"perceived, cultural significance",2
+2023NOV,5.4,Crit,PU,argumentation,"differed, intention",3
+2023NOV,5.5,Crit,VL,style,layout,4
+2023NOV,5.6,Crit,LF,sentence structure,evaluate effectiveness (two sentences),3
+2023NOV,5.7,Crit,VL,inference,values/message/interests/impact,2
+2023NOV,5.8,Crit,ICQ,style,typography,2
+2023NOV,5.9,Crit,C,mixed,"stereotypes, promote business",4
+2023NOV,6.1,Lang,LF,sentence structure,simple compound complex,2
+2023NOV,6.2,Lang,LF,punctuation,hyphen,2
+2023NOV,6.3,Lang,LF,sentence structure,direct/indirect/reported speech,2
+2023NOV,6.4,Lang,VL,fos,irony,2
+2023NOV,6.5,Lang,LF,punctuation,ellipsis,2
+2023MAY,1.1,Comp,PU,inference,"title, complexity, content, extent",2
+2023MAY,1.2.1,Comp,LF,punctuation,parenthesis,2
+2023MAY,1.2.2,Comp,ICQ,style,style,2
+2023MAY,1.3,Comp,PU,argumentation,"purpose, evolved, gender-neutral pronouns",3
+2023MAY,1.4.1,Comp,LF,language,word skill,1
+2023MAY,1.4.2,Comp,LF,language,morphology,2
+2023MAY,1.5,Comp,DCQ,diction,intention/tone/diction,4
+2023MAY,1.6,Comp,PU,argumentation,"evaluate, validity, argument",2
+2023MAY,1.7,Comp,PU,inference,intention,2
+2023MAY,1.8,Comp,C,mixed,"extent, humanise, legitimise, context",5
+2023MAY,2.0,Summary,Summary,synthesis,"speech, opening address, space exploration, distraction",10
+2023MAY,3.1,Seen,ICQ,fos,imagery,3
+2023MAY,3.2,Seen,ICQ,rhythm,rhythm,3
+2023MAY,3.3,Seen,LF,language,pronouns,2
+2023MAY,3.4,Seen,LF,sentence structure,imperative declarative iterrogative,3
+2023MAY,3.5,Seen,C,mixed,"critically discuss, response, connotations, fatherland, motherland, extract, diction",4
+2023MAY,4.1,Unseen,C,apply definition,"judge, classified, poem, extract, poem",3
+2023MAY,4.2.1,Unseen,DCQ,sound device,sound device,2
+2023MAY,4.2.2,Unseen,PU,inference,"logic, beautiful, explain",3
+2023MAY,4.3,Unseen,ICQ,rhythm,line structure,3
+2023MAY,4.4,Unseen,C,fos,"evaluate, successfully, employed, irony, class inequality",4
+2023MAY,5.1.1,Crit,LF,sentence structure,subject verb object,2
+2023MAY,5.1.2,Crit,LF,error,word confusion,2
+2023MAY,5.1.3,Crit,VL,style,values/message/interests/impact,3
+2023MAY,5.2.1,Crit,LF,sentence structure,active/passive voice,1
+2023MAY,5.2.2,Crit,LF,sentence structure,evaluate effectiveness (two sentences),2
+2023MAY,5.3,Crit,C,mixed,"evaluate, success, advertising campaign, rational appeal, emotional appeal, visual, verbal",4
+2023MAY,5.4,Crit,VL,style,layout,2
+2023MAY,5.5,Crit,VL,style,visual only,3
+2023MAY,5.6.1,Crit,DCQ,style,pun,3
+2023MAY,5.6.2,Crit,VL,style,visual + verbal details,3
+2023MAY,6.1.1,Lang,LF,language,neologism,1
+2023MAY,6.1.2,Lang,LF,error,concord,2
+2023MAY,6.2,Lang,LF,sentence structure,rhetorical questions,1
+2023MAY,6.3.1,Lang,LF,punctuation,inverted commas,1
+2023MAY,6.3.2,Lang,LF,punctuation,apostrophe,1
+2023MAY,6.4,Lang,LF,punctuation,ellipsis,1
+2023MAY,6.5,Lang,LF,sentence structure,evaluate effectiveness (two sentences),2
+2023MAY,6.6,Lang,LF,error,malapropism,1
+2022NOV,1.1,Comp,PU,structure,"effect, single-sentenced paragraph",2
+2022NOV,1.2,Comp,LF,punctuation,parenthesis,2
+2022NOV,1.3,Comp,ICQ,diction,repetition,2
+2022NOV,1.4,Comp,C,inference,"same views, motivate, extract",3
+2022NOV,1.5,Comp,PU,diction,"connotations, intentions",2
+2022NOV,1.6,Comp,PU,inference,"summarises, implies identity",3
+2022NOV,1.7,Comp,PU,inference,"significance, and yet",3
+2022NOV,1.8,Comp,PU,argumentation,"positions, study, belief",3
+2022NOV,1.9,Comp,C,mixed,"critically evaluate, cartoons, aligned",5
+2022NOV,2.0,Summary,Summary,synthesis,"email, principal, world radio day",10
+2022NOV,3.1,Seen,LF,language,pronouns,2
+2022NOV,3.2,Seen,DCQ,rhythm,enjambment,2
+2022NOV,3.3,Seen,PU,inference,"repeated word, relationship",3
+2022NOV,3.4,Seen,PU,inference,"concern, next duchess",2
+2022NOV,3.5,Seen,PU,inference,"title, societal norms, voice, voiceless",2
+2022NOV,3.6,Seen,C,mixed,"critically discuss, dramatic monologue, weak vain brutal",4
+2022NOV,4.1,Unseen,LF,punctuation,rhythm,2
+2022NOV,4.2,Unseen,PU,argumentation,"compound words, effect, meaning",3
+2022NOV,4.3,Unseen,DCQ,diction,intention/tone/diction,2
+2022NOV,4.4,Unseen,PU,inference,"hyphenation, effective, alternative",2
+2022NOV,4.5,Unseen,LF,sentence structure,rhetorical questions,2
+2022NOV,4.6,Unseen,C,mixed,"critically explore, suitable response, mood, diction",4
+2022NOV,5.1,Crit,VL,style,visual + verbal details,4
+2022NOV,5.2,Crit,LF,error,word confusion,1
+2022NOV,5.3.1,Crit,LF,sentence structure,simple compound complex,2
+2022NOV,5.3.2,Crit,DCQ,fos,hyperbole,2
+2022NOV,5.4,Crit,VL,style,layout,4
+2022NOV,5.5,Crit,C,mixed,"critically discuss, effective, visual verbal details",4
+2022NOV,5.6.1,Crit,DCQ,diction,literal and figurative,2
+2022NOV,5.6.2,Crit,LF,language,pronouns,2
+2022NOV,5.7,Crit,VL,style,values/message/interests/impact,4
+2022NOV,6.1.1,Lang,LF,error,full sentence,1
+2022NOV,6.1.2,Lang,DCQ,fos,pun,2
+2022NOV,6.2.1,Lang,LF,error,misrelated participle,1
+2022NOV,6.2.2,Lang,LF,error,tautology,1
+2022NOV,6.3,Lang,LF,language,word skill,2
+2022NOV,6.4.1,Lang,LF,language,word skill,1
+2022NOV,6.4.2,Lang,LF,language,word skill,2
+2022MAY,1.1,Comp,PU,inference,"own words, wish, future",2
+2022MAY,1.2,Comp,PU,inference,"profound, realise, not alone",3
+2022MAY,1.3,Comp,LF,punctuation,dash,3
+2022MAY,1.4,Comp,ICQ,fos,figure of speech,3
+2022MAY,1.5,Comp,LF,sentence structure,rhetorical questions,2
+2022MAY,1.6,Comp,C,argumentation,"agree, assertion, extract, social construct",4
+2022MAY,1.7.1,Comp,DCQ,fos,euphemism,1
+2022MAY,1.7.2,Comp,DCQ,diction,euphemism,3
+2022MAY,1.8,Comp,PU,argumentation,"successful, message, diction, tone",4
+2022MAY,2.0,Summary,Summary,synthesis,"proposal, tourism, post-pandemic",10
+2022MAY,3.1,Seen,DCQ,diction,intention/tone/diction,2
+2022MAY,3.2,Seen,ICQ,fos,figure of speech,3
+2022MAY,3.3,Seen,LF,punctuation,rhythm,3
+2022MAY,3.4,Seen,DCQ,style,sound device,3
+2022MAY,3.5,Seen,C,mixed,"justify, nature, humanity, both poems",4
+2022MAY,4.1,Unseen,PU,inference,"atmosphere, environment",2
+2022MAY,4.2,Unseen,ICQ,inference,figure of speech,2
+2022MAY,4.3,Unseen,PU,inference,"dilemma, expressed",3
+2022MAY,4.4,Unseen,ICQ,structure,form + structure,3
+2022MAY,4.5,Unseen,C,mixed,"critically discuss, quotation, memory, identity, both poems",5
+2022MAY,5.1,Crit,DCQ,argumentation,paradox,3
+2022MAY,5.2,Crit,ICQ,structure,line structure,3
+2022MAY,5.3,Crit,LF,language,pronouns,2
+2022MAY,5.4,Crit,C,argumentation,"gender bias, both texts, justify",2
+2022MAY,5.5,Crit,VL,comparative,visual metaphor/pun,3
+2022MAY,5.6,Crit,DCQ,fos,irony,2
+2022MAY,5.7,Crit,LF,language,morphology,2
+2022MAY,5.8.1,Crit,PU,inference,"advice, meme, both texts",2
+2022MAY,5.8.2,Crit,VL,style,visual + verbal details,3
+2022MAY,5.8.3,Crit,ICQ,style,style,3
+2022MAY,6.1,Lang,ICQ,style,repetition,2
+2022MAY,6.2,Lang,LF,sentence structure,subject verb object,1
+2022MAY,6.3.1,Lang,LF,sentence structure,loose vs periodic,2
+2022MAY,6.3.2,Lang,LF,sentence structure,evaluate effectiveness (two sentences),2
+2022MAY,6.4.1,Lang,LF,language,word skill,2
+2022MAY,6.4.2,Lang,LF,error,tautology,1
+2021NOV,1.1,Comp,PU,inference,"reasons, drawn to news",2
+2021NOV,1.2,Comp,PU,opinion,"differences, desirable",3
+2021NOV,1.3,Comp,PU,argumentation,"statistics, enhances, undermines",3
+2021NOV,1.4,Comp,LF,language,initialism,1
+2021NOV,1.5,Comp,DCQ,style,anecdote,3
+2021NOV,1.6,Comp,PU,diction,"synonymous, terms",2
+2021NOV,1.7,Comp,DCQ,diction,intention/tone/diction,4
+2021NOV,1.8,Comp,PU,argumentation,"means, agree, extent",3
+2021NOV,1.9,Comp,C,mixed,"cartoon, extent, agree",4
+2021NOV,2.0,Summary,Summary,synthesis,"vote of thanks speech, prizegiving, athlete",10
+2021NOV,3.1,Seen,C,mixed,"original vs final version, effective, imagery, diction",4
+2021NOV,3.2,Seen,ICQ,fos,figure of speech,3
+2021NOV,3.3,Seen,ICQ,structure,repetition,3
+2021NOV,3.4,Seen,C,structure,"critically examine, mood, extract, sentence construction, rhythm",5
+2021NOV,4.1,Unseen,ICQ,style,style,3
+2021NOV,4.2,Unseen,PU,diction,"either, or, attitude",3
+2021NOV,4.3,Unseen,LF,punctuation,parenthesis,3
+2021NOV,4.4,Unseen,DCQ,fos,pun,2
+2021NOV,4.5,Unseen,C,structure,"sonnet form, structural elements, intentions",4
+2021NOV,5.1,Crit,VL,style,visual + verbal details,2
+2021NOV,5.2,Crit,LF,sentence structure,imperative declarative iterrogative,3
+2021NOV,5.3,Crit,VL,style,layout,3
+2021NOV,5.4,Crit,PU,diction,"sentence B, shift, intentions",3
+2021NOV,5.5,Crit,PU,argumentation,"question mark, effective",2
+2021NOV,5.6.1,Crit,LF,language,pronouns,1
+2021NOV,5.6.2,Crit,DCQ,fos,irony,2
+2021NOV,5.7,Crit,VL,mixed,infographic,4
+2021NOV,5.8,Crit,C,mixed,"logo, proverb, effective, extent",3
+2021NOV,6.1,Lang,LF,language,word skill,2
+2021NOV,6.2.1,Lang,LF,language,word skill,2
+2021NOV,6.2.2,Lang,LF,punctuation,commas,2
+2021NOV,6.3,Lang,LF,language,morphology,4
+2021NOV,6.4,Lang,DCQ,fos,pun,2
+2021MAY,1.1,Comp,PU,inference,"title, word choice, catchy",2
+2021MAY,1.2,Comp,PU,inference,"factors, support view",2
+2021MAY,1.3,Comp,PU,inference,"phrase, effective, intention",2
+2021MAY,1.4,Comp,DCQ,diction,intention/tone/diction,4
+2021MAY,1.5.1,Comp,PU,inference,"criticised, who, what",3
+2021MAY,1.5.2,Comp,LF,error,concord,2
+2021MAY,1.6,Comp,PU,argumentation,"tweet, respond, paragraph",4
+2021MAY,1.7,Comp,ICQ,style,shift + style/tone,4
+2021MAY,1.8,Comp,PU,structure,"single-line paragraph, why",2
+2021MAY,2.0,Summary,Summary,synthesis,"newsletter, job shadowing, grade 12",10
+2021MAY,3.1,Seen,ICQ,fos,imagery,3
+2021MAY,3.2,Seen,ICQ,fos,figure of speech,3
+2021MAY,3.3,Seen,C,mixed,"extent, similar views, article",4
+2021MAY,3.4,Seen,C,mixed,"evaluate critically, diction, both poems, father-son relationship",5
+2021MAY,4.1,Unseen,PU,diction,recurring daydream,2
+2021MAY,4.2,Unseen,LF,language,pronouns,3
+2021MAY,4.3,Unseen,ICQ,fos,imagery,3
+2021MAY,4.4,Unseen,PU,diction,"alone, lonely, meaning changed",3
+2021MAY,4.5,Unseen,C,mixed,"quotation, vulnerability, both poems",4
+2021MAY,5.1,Crit,VL,mixed,visual + verbal details,4
+2021MAY,5.2.1,Crit,LF,sentence structure,imperative declarative iterrogative,3
+2021MAY,5.2.2,Crit,PU,diction,"attitude, failure",2
+2021MAY,5.3,Crit,VL,mixed,values/message/interests/impact,4
+2021MAY,5.4,Crit,LF,punctuation,inverted commas,1
+2021MAY,5.5.1,Crit,PU,inference,"meaning, central, intention",3
+2021MAY,5.5.2,Crit,LF,punctuation,colon,1
+2021MAY,5.5.3,Crit,VL,inference,values/message/interests/impact,2
+2021MAY,6.1,Lang,VL,style,visual metaphor/pun,2
+2021MAY,6.2,Lang,LF,sentence structure,subject verb object,2
+2021MAY,6.3,Lang,LF,punctuation,commas,2
+2021MAY,6.4.1,Lang,LF,sentence structure,main/subordinate clause,1
+2021MAY,6.4.2,Lang,PU,diction,"word choice, intention",2
+2021MAY,6.5.1,Lang,DCQ,fos,satire,3
+2021MAY,6.5.2,Lang,LF,sentence structure,direct/indirect/reported speech,3
+2020NOV,1.1,Comp,PU,inference,"tempered, approach to conflict",2
+2020NOV,1.2.1,Comp,PU,inference,"implies, masquerading",2
+2020NOV,1.2.2,Comp,PU,inference,"naming, effect on reader",2
+2020NOV,1.3.1,Comp,PU,diction,"word choice, carve, cut",3
+2020NOV,1.3.2,Comp,LF,punctuation,parenthesis,3
+2020NOV,1.4,Comp,PU,argumentation,"anecdotes, writer's position",3
+2020NOV,1.5,Comp,PU,inference,"shift focus, enriched argument",3
+2020NOV,1.6,Crit,C,mixed,"argue, image, paragraphs",4
+2020NOV,1.7,Comp,PU,argumentation,"critically evaluate, title, aligns",3
+2020NOV,2.0,Summary,Summary,synthesis,"press statement, pharmaceutical, profit",10
+2020NOV,3.1,Seen,PU,style,"numbers, stanzas, circumstances",2
+2020NOV,3.2,Seen,PU,structure,"repetition, meanings, freedom",4
+2020NOV,3.3,Seen,ICQ,fos,figure of speech,4
+2020NOV,3.4,Seen,C,mixed,"imagery, visual, judge, greater hope",5
+2020NOV,4.1,Unseen,PU,diction,"conjunction, until, impact",2
+2020NOV,4.2,Unseen,DCQ,diction,intention/tone/diction,3
+2020NOV,4.3,Unseen,DCQ,fos,metaphor,3
+2020NOV,4.4,Unseen,ICQ,fos,imagery,3
+2020NOV,4.5,Unseen,C,style,"discuss, style, message",4
+2020NOV,5.1.1,Crit,LF,punctuation,apostrophe,3
+2020NOV,5.1.2,Crit,LF,sentence structure,rhetorical questions,3
+2020NOV,5.1.3,Crit,VL,style,propaganda,4
+2020NOV,5.2.1,Crit,VL,style,colour and/or font,3
+2020NOV,5.2.2,Crit,VL,style,layout,2
+2020NOV,5.3,Crit,DCQ,fos,irony,3
+2020NOV,5.4,Crit,C,mixed,"critically compare, visual, textual, approach",4
+2020NOV,6.1,Lang,PU,diction,"heading, clue, America",1
+2020NOV,6.2.1,Lang,PU,diction,"buoyant, impact",2
+2020NOV,6.2.2,Lang,LF,language,synonym,1
+2020NOV,6.3,Lang,LF,error,split infinitive,2
+2020NOV,6.4,Lang,LF,punctuation,semi-colon,2
+2020NOV,6.5,Lang,LF,error,concord,2
+2020NOV,6.6.1,Lang,LF,sentence structure,active/passive voice,1
+2020NOV,6.6.2,Lang,LF,sentence structure,evaluate effectiveness (two sentences),2

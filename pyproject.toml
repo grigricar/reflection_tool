@@ -10,6 +10,9 @@ dependencies = [
     "seaborn",
     "plotly",
     "openpyxl",
+    "anthropic>=1.3.0",
+    "pydantic>=2.13.5",
+    "supabase>=2.31.0",
 ]
 
 [dependency-groups]

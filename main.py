@@ -5,6 +5,43 @@ import plotly.express as px
 from views.reflection_tool import reflection_tool
 from views.q_type import q_type
 from views.insights import insights
+from views.paper_upload_tab import render_paper_upload_tab
+from supabase import create_client, Client
+
+# supabase retrieval and column renaming
+
+@st.cache_resource
+def init_connection() -> Client:
+    return create_client(st.secrets["SUPABASE_URL"], st.secrets["SUPABASE_KEY"])
+
+supabase = init_connection()
+
+@st.cache_data
+def load_exam_data() -> pd.DataFrame:
+    retrieval = (supabase.table('ieb_exams')
+                .select('*')
+                .order('row_id')
+                .execute()
+        )
+
+    df = pd.DataFrame(retrieval.data)
+
+    df = df.rename(columns={
+        "id": "ID",
+        "question": "Question",
+        "section": "Section",
+        "type": "Type",
+        "subskill": "Subskill",
+        "keywords": "Keywords",
+        "question_total": "Question Total",
+        "count": "Count",
+    })
+    return df
+
+df = load_exam_data().drop(columns=["row_id"])
+
+DATA_SOURCE = df
+
 
 # settings
 #hides input bin messages
@@ -20,18 +57,30 @@ st.markdown(
 )
 
 # VISUAL SETUP
-tab1, tab2, tab3 = st.tabs(["Definitions", "Reflection Tool", "Insights" ])
+tab1, tab2, tab3, tab4 = st.tabs(["Definitions", "Reflection Tool", "Insights", "Paper Upload" ])
 
 with tab1:
-    q_type()
+    q_type(DATA_SOURCE)
 
 with tab2:
-    data_path = "data/no_bloom.pkl"
-    reflection_tool(data_path)
+    
+    reflection_tool(DATA_SOURCE)
 
 with tab3:
-    data_source = "data/no_bloom.pkl"
-    insights(data_source)
+    
+    insights(DATA_SOURCE)
+
+with tab4:
+    render_paper_upload_tab()
+    st.divider()
+    st.markdown(
+    "⚠️ **Disclaimer:** Papers are processed only to extract question data and are not "
+    "retained or shared afterward. Uploads are not used to train Claude models: "
+    "[see Anthropic's policy](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training). "
+    "Question classifications are AI-generated and may not always be accurate. Please "
+    "verify against the classification framework before relying on them."
+)
+
 
 
 # Sidebar Info

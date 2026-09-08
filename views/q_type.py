@@ -4,17 +4,38 @@ import streamlit as st
 import os
 
 
-def q_type():
+def q_type(data_source):
 
     st.image(os.path.join(os.getcwd(), "static", "header2.png"))
     st.page_link(page="https://www.youtube.com/channel/UCCDNh1fC2C93zzyIj15fC0g", label="An @English_hacked reflective tool")
 
+    new_map = {
+                        'C': "Comparative",
+                        'DCQ':"Direct Concept Question",
+                        'ICQ':"Indirect Concept Question",
+                        'LF':"Language Focused",
+                        'PU':"Pure Understanding",
+                        'Summary':"Summary",
+                        'VL': "Visual Literacy",
+            }
+            #remapping and grouping data
+    paper_eda = data_source.copy()
+    paper_eda['Type'] = paper_eda['Type'].map(new_map)
+    paper_id_type_sort = paper_eda.groupby(["ID", "Type"])['Question Total'].sum().reset_index()
+    avg_questions = paper_id_type_sort.groupby('Type')['Question Total'].mean().round(2).reset_index().sort_values('Question Total')
+
+    qtype_avg = dict(zip(avg_questions['Type'], (round(avg_questions['Question Total']))/100))
+
+    LATEST_YEAR = paper_eda['ID'][1][0:4]
+    LF_AVG = qtype_avg["Language Focused"]*100
+
+    
     st.title("Question Types")
     st.text("Improving your Paper I mark can feel like trying to hit a moving target. Where do you even begin? This reflective tool gives you a clear starting point by " \
     "helping you focus on question types rather than individual sections. You'll discover that some questions are far more predictable, and therefore " \
     "easier to prepare for, than others. \n" 
     "\n"
-    "Across Paper 1 there are many repeatable question types. For example, on average, Language Focused (LF) questions account for 20% of the paper! " \
+    f"Across Paper 1 there are many repeatable question types. For example, on average, Language Focused (LF) questions account for {LF_AVG}% of the paper! " \
     "These questions are not by any means restricted to the final 'Language Section'. \n " \
     "\n" \
     "Knowing where your strengths lie in answering these different question types " \
@@ -22,24 +43,10 @@ def q_type():
     "These definitions can be somewhat fuzzy and there is room to debate them, but after considered analysis of papers the definitions below appear to be a robust " \
     "framework to improve paper reflection and discover where best to allocate your study time and focus. \n " \
     "\n" \
-    "Navigate to the 'Reflection Tool' in the tabs above to enter your results for examination papers from 2020 to 2025 to generate a report that will help you identify " \
+    f"Navigate to the 'Reflection Tool' in the tabs above to enter your results for examination papers from 2020 to {LATEST_YEAR} to generate a report that will help you identify " \
     "which question types you need to work on most. ")
 
-    new_map = {
-                    'C': "Comparative",
-                    'DCQ':"Direct Concept Question",
-                    'ICQ':"Indirect Concept Question",
-                    'LF':"Language Focused",
-                    'PU':"Pure Understanding",
-                    'Summary':"Summary",
-                    'VL': "Visual Literacy",
-        }
-        #remapping and grouping data
-    paper_eda = pd.read_pickle('data/no_bloom.pkl')
-    paper_eda['Type'] = paper_eda['Type'].map(new_map)
-    paper_id_type_sort = paper_eda.groupby(["ID", "Type"])['Question Total'].sum().reset_index()
-    avg_questions = paper_id_type_sort.groupby('Type')['Question Total'].mean().round(2).reset_index().sort_values('Question Total')
-
+    
     #Donut for avg. question type % in papers 
     fig = px.pie(
     avg_questions,
@@ -71,7 +78,7 @@ def q_type():
 
     st.plotly_chart(fig, width='stretch')
 
-    qtype_avg = dict(zip(avg_questions['Type'], (round(avg_questions['Question Total']))/100))
+    
 
     st.divider()
 
@@ -188,7 +195,7 @@ def q_type():
                         st.subheader("Comparative (C):")
                         st.metric(label= "Average % of marks in P1:", value= qtype_avg['Comparative'], format='percent')
                         st.text("Usually placed at the end of sections these questions are perceived to be the most challenging. " \
-                        "Your are required to compare one text/image/poem to one or more other sources. They usually have high mark allocations. " \
+                        "You are required to compare one text/image/poem to one or more other sources. They usually have high mark allocations. " \
                         " These questions are actually easier than believed to be. They are quite open ended, and the answering technique" \
                         " is broadly similar for this specific question type. It may be difficult to get full marks, " \
                         "but it is often very easy to get 2.5/4 or 3/5. They are often prefaced by use of the word 'critically'. " )
