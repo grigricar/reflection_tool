@@ -16,7 +16,7 @@ def reflection_tool(data_source):
     "tool is designed to help you achieve.\n" \
     "\n" \
     "Simply enter your results for a past paper (National IEB or an uploaded prelim/IEB structured paper) to produce a normal section summary, but also a question-type summary that will help " \
-    "you to know where to improve and offer suggestions for particular concepts for yuo to focus on. All of your data is stored locally on " \
+    "you to know where to improve and offer suggestions for particular concepts for you to focus on. " \
     " none of your data is shared or permanently stored. Only you have access to it. Download the report to keep your results and the recommendations. \n" \
     "\n" \
     "Proceed to the 'Insights' tab to explore fully the underlying concepts and skills in many of the question types. Use the 'Question Search' in the sidebar to find " \
