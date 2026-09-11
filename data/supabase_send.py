@@ -1,6 +1,6 @@
 import pandas as pd
 from supabase import create_client
-import tomllib  # built into Python 3.11+; use `pip install toml` + `import toml` on older versions
+import tomllib  
 
 
 with open("./.streamlit/secrets.toml", "rb") as f:
