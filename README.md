@@ -33,7 +33,7 @@ This addition also implemented a full database storage and retrieval using Supab
 
 [Jump into the app](https://reflectiontool.streamlit.app), navigate with the tabs, play around with entering some marks and you will soon get the hang of it!
 </p>
-</p>
+
 
 <h2>Languages and Utilities Used</h2>
 
